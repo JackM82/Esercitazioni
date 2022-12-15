@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+  
+  body{  
+    font-family: 'Courgette', cursive;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 600PX;
+  }
+  main{
+    margin-top: 4rem; 
+    border: 1px solid black;
+  }
+  .row {       
+    font-size:0;          
+  }
+  .row div {
+    width: 60px;
+    height: 60px;
+    border: none;
+    display: inline-block; 
+    font-size:1rem;        
+  }
+
+/*assenza testo celle interne*/
+.int{
+  font-size:0; 
+}
+
+  /* COLORAZIONE CELLE*/
+  .row:nth-child(odd) div:nth-child(odd){
+    background-color: #ebba7a;    
+  }
+  .row:nth-child(odd) div:nth-child(even){
+    background-color: #412706;
+  }
+  .row:nth-child(even) div:nth-child(even){
+    background-color: #ebba7a;
+  }
+  .row:nth-child(even) div:nth-child(odd){
+    background-color: #412706;
+  }
+  
+  .row:nth-child(odd) div:hover{    
+    background-color: red;
+  }
+  .row:nth-child(even) div:hover{     
+    background-color: red;
+  }
+  
+ /* POSIZIONE SCRITTE CELLE riga 1*/
+ .row:nth-child(1) div span:nth-child(1) {        
+    position: relative;
+    left: 25px;
+    top:-30px;
+  } 
+  .row:nth-child(1) div:first-child  span:nth-child(2) {        
+    position: relative;
+    left: -40px;
+    top:20px;
+  } 
+  .row:nth-child(1) div:last-child span:nth-child(2) {        
+    position: relative;
+    left: 60px;
+    top:20px;
+  } 
+
+ /* POSIZIONE SCRITTE CELLE riga 2*/
+.row:nth-child(2) div:first-child  span {        
+  position: relative;
+  left: -25px;
+  top:20px;
+} 
+.row:nth-child(2) div:last-child span {        
+  position: relative;
+  left: 72px;
+  top:20px;
+} 
+
+ /* POSIZIONE SCRITTE CELLE riga 3*/
+ .row:nth-child(3) div:first-child  span {        
+  position: relative;
+  left: -25px;
+  top:20px;
+} 
+.row:nth-child(3) div:last-child span {        
+  position: relative;
+  left: 72px;
+  top:20px;
+} 
+
+ /* POSIZIONE SCRITTE CELLE riga 4*/
+ .row:nth-child(4) div:first-child  span {        
+  position: relative;
+  left: -25px;
+  top:20px;
+} 
+.row:nth-child(4) div:last-child span {        
+  position: relative;
+  left: 72px;
+  top:20px;
+} 
+
+ /* POSIZIONE SCRITTE CELLE riga 5*/
+ .row:nth-child(5) div:first-child  span {        
+  position: relative;
+  left: -25px;
+  top:20px;
+} 
+.row:nth-child(5) div:last-child span {        
+  position: relative;
+  left: 72px;
+  top:20px;
+} 
+
+ /* POSIZIONE SCRITTE CELLE riga 6*/
+ .row:nth-child(6) div:first-child  span {        
+  position: relative;
+  left: -25px;
+  top:20px;
+} 
+.row:nth-child(6) div:last-child span {        
+  position: relative;
+  left: 72px;
+  top:20px;
+} 
+
+ /* POSIZIONE SCRITTE CELLE riga 7*/
+ .row:nth-child(7) div:first-child  span {        
+  position: relative;
+  left: -25px;
+  top:20px;
+} 
+.row:nth-child(7) div:last-child span {        
+  position: relative;
+  left: 72px;
+  top:20px;
+} 
+
+   /* POSIZIONE SCRITTE CELLE riga 8*/
+ .row:nth-child(8) div span:nth-child(1) {        
+    position: relative;
+    left: 25px;
+    top:75px;
+  } 
+  .row:nth-child(8) div:first-child  span:nth-child(2) {        
+    position: relative;
+    left: -40px;
+    top:20px;
+  } 
+  .row:nth-child(8) div:last-child span:nth-child(2) {        
+    position: relative;
+    left: 55px;
+    top:20px;
+  } 
+ 
+
+
+
+
+
+
+
+

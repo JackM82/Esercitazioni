@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin-left: 4rem;
+        margin-top: 4rem; 
+        font-size:0;
+              
+      }
+      .container div {
+        width: 70px;
+        height: 60px;
+        border: 1px solid black;
+        display: inline-block; 
+        font-size:1rem;        
+      }
+      .container div:nth-child(even) {
+        border:1px red solid;
+      }
+      .container div:nth-child(odd) span:nth-child(even) {        
+        color: #1c8a33;
+      }      
+      .container div:nth-child(2) span:last-of-type {        
+        color: #0528f0;
+      } 
+      .container div:nth-child(6) span:not(:last-of-type) {        
+        color: #ecf005;
+      }
+
+      /*  SOLUZIONE CON RELATIVE 
+      .container div span:nth-child(1) {        
+        position: relative;
+        left: 30px;
+        top:60px;
+      } */
+      .container div span:nth-child(1){
+        position: absolute;
+        top:130px;  
+        padding-left: 30px;    
+      }
+
+      /*  SOLUZIONE CON RELATIVE 
+      .container div span:nth-child(2) {        
+        position: relative;
+        left: 15px;
+        top: -20px;
+      } */
+      .container div span:nth-child(2){
+        position: absolute;
+        top:45px;  
+        padding-left: 30px;              
+      }
+      
+      /*  SOLUZIONE CON RELATIVE 
+      .container div:nth-child(10) span:nth-child(4) {        
+        position: relative;
+        left: 30px;
+        top:  20px;
+      } */
+      .container div:nth-child(10) span:nth-child(4) {        
+        position: absolute;
+        top:85px;  
+        padding-left: 65px;
+      }
+      
+      /*  SOLUZIONE CON RELATIVE 
+      .container div:nth-child(1) span:nth-child(4) {        
+        position: relative;
+        left: -60px;
+        top:  20px;
+      } */
+      .container div:nth-child(1) span:nth-child(4) {        
+        position: absolute;
+        top:85px;  
+        left: 55PX;
+      } 
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+        <span>D</span>
+      </div>
+    </div>
+  </body>
+</html>
