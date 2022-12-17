@@ -22,15 +22,23 @@ justify-content: center;
 }
 
 .container:hover .card{
-    filter:brightness(70%);           
+    filter:brightness(70%);         
 }
 
 .container:hover .tools{
-    opacity: 100%;           
+    opacity: 100%; 
+    animation-name: tool_bar;
+    animation-duration: 0.5s;    
+    animation-direction:normal; 
+    animation-iteration-count:1;             
 }
 
 .container:hover .save{
-    opacity: 100%;           
+    opacity: 100%;  
+    animation-name: btn_save;
+    animation-duration: 0.5s;    
+    animation-direction:normal; 
+    animation-iteration-count:1;           
 }
 
 .link:hover{
@@ -59,8 +67,14 @@ justify-content: center;
     border-radius: 24px;
     cursor: pointer; 
     opacity:0%;
-    transition: opacity;    
+    transition: opacity;       
 }
+
+@keyframes btn_save {
+    0%   {right: -150px; top: -370px;}    
+    100% {right: -150px; top: -320px;}
+  }
+
 
 .save p{
     color: white;
@@ -108,5 +122,8 @@ justify-content: center;
     transition: opacity;       
 }
 
-
+@keyframes tool_bar {
+    0%   {right: 0px; top: -70px;}    
+    100% {right: 0px; top: -100px;}
+  }
 
